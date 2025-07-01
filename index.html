@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myanmar Real Estate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Myanmar Real Estate</h1>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+  </header>
+
+  <section class="filters">
+    <select id="property-type">
+      <option value="">Type</option>
+      <option>Home</option>
+      <option>Apartment</option>
+    </select>
+    <select id="city">
+      <option value="">City</option>
+      <option>Yangon</option>
+      <option>Mandalay</option>
+    </select>
+    <select id="region">
+      <option value="">Region</option>
+      <option>South</option>
+      <option>North</option>
+    </select>
+    <select id="price">
+      <option value="">Price</option>
+      <option>Under $50,000</option>
+      <option>$50,000 - $100,000</option>
+      <option>Above $100,000</option>
+    </select>
+    <button onclick="filterProperties()">Filter</button>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <!-- Properties will appear here -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
